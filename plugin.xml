@@ -48,6 +48,12 @@
         <framework src="com.google.android.gms:play-services-ads:+" />
         <!-- but unfortunately, build.phonegap.com, Intel XDK, and some other tools still use ant -->
         <!-- dependency id="cordova-plugin-googleplayservices"/ -->
+        
+        <!-- Required parts of the Google Play services library needed by the OneSignal SDK. -->
+        <framework src="com.google.android.gms:play-services-gcm:+" />
+        <!-- play-services-analytics is only required when gms version 8.1.0 or older is used. -->
+        <framework src="com.google.android.gms:play-services-analytics:+" />
+        <framework src="com.google.android.gms:play-services-location:+" />
      </platform>
      
     <!-- same as android, but use ant instead of gradle -->
